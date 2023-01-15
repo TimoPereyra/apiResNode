@@ -1,0 +1,53 @@
+@consultaGet=http://localhost:3050/consultaGet
+@consultaPost=http://localhost:3050/consultaPost
+@consultaGetId=http://localhost:3050/consultaId
+@getIdelete = http://localhost:3050/consultaBorrar
+GET {{consultaGet}}
+
+
+
+
+
+
+###
+
+
+POST {{consultaPost}}
+Content-Type: application/json
+
+
+{
+  
+    "COD_PRODUCTO": "31",
+    "TIPO_PRODUCTO": "Tecnologia",
+    "DESCRIPCION": "IPAD",
+    "JOB_ID": 1,
+    "COD_UNIDAD_MEDIDA": "KG"
+
+}
+
+
+
+
+###
+
+GET  {{consultaGetId}}
+Content-Type: application/json
+
+
+{
+
+    "ID":"24"
+}
+
+
+###
+
+DELETE  {{getIdelete}}
+Content-Type: application/json
+
+
+{
+
+    "Idelete":"32"
+}
